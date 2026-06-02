@@ -138,7 +138,7 @@ const socials = [
 ];
 
 const stats = [
-  { n: "11K+", l: "X Followers" },
+  { n: "12K+", l: "X Followers" },
   { n: "5K+", l: "Discord" },
   { n: "5", l: "Live Apps" },
   { n: "4+", l: "Years Shipping" },
