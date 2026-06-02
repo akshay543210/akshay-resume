@@ -163,7 +163,7 @@ const Index = () => {
             <a href="#experience" className="hover:text-primary transition">Experience</a>
             <a href="#contact" className="hover:text-primary transition">Contact</a>
           </div>
-          <span className="inline-flex items-center gap-2 rounded-full border border-[hsl(var(--confirmed)/0.5)] bg-[hsl(var(--confirmed)/0.08)] px-3 py-1 text-[0.6rem] font-semibold uppercase tr[...]
+          <span className="inline-flex items-center gap-2 rounded-full border border-[hsl(var(--confirmed)/0.5)] bg-[hsl(var(--confirmed)/0.08)] px-3 py-1 text-[0.6rem] font-semibold uppercase tracking-wider">
             <span className="relative flex h-1.5 w-1.5">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[hsl(var(--confirmed))] opacity-60" />
               <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-[hsl(var(--confirmed))]" />
@@ -208,7 +208,7 @@ const Index = () => {
               </a>
               <a
                 href="mailto:akshaymuthyala77@gmail.com"
-                className="inline-flex items-center gap-2 rounded-full border border-foreground/20 px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.18em] text-foreground/85 hover:border-pr[...]
+                className="inline-flex items-center gap-2 rounded-full border border-foreground/20 px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.18em] text-foreground/85 hover:border-primary transition"
               >
                 <Mail className="h-4 w-4" />
                 Hire Me
@@ -295,7 +295,7 @@ const Index = () => {
                 href={p.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative grid grid-cols-12 items-center gap-4 rounded-2xl border border-foreground/10 bg-foreground/[0.02] px-5 py-6 transition-all hover:border-primary/40 hover:[...]
+                className="group relative grid grid-cols-12 items-center gap-4 rounded-2xl border border-foreground/10 bg-foreground/[0.02] px-5 py-6 transition-all hover:border-primary/40 hover:bg-foreground/[0.04]"
               >
                 <div className="col-span-1 font-mono text-xs text-foreground/30">{String(idx + 1).padStart(2, "0")}</div>
                 <div className="col-span-12 sm:col-span-4">
@@ -336,7 +336,7 @@ const Index = () => {
                   {group.items.map((it) => (
                     <span
                       key={it}
-                      className="rounded-lg border border-primary/25 bg-primary/[0.06] px-3 py-1.5 text-xs text-foreground/85 transition hover:-translate-y-0.5 hover:border-primary hover:bg-prima[...]
+                      className="rounded-lg border border-primary/25 bg-primary/[0.06] px-3 py-1.5 text-xs text-foreground/85 transition hover:-translate-y-0.5 hover:border-primary hover:bg-primary/[0.1]"
                     >
                       {it}
                     </span>
@@ -372,7 +372,7 @@ const Index = () => {
                       href={l.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group inline-flex items-center justify-between rounded-lg border border-primary/20 bg-primary/[0.06] px-3 py-2 text-xs text-foreground/80 hover:border-primary hov[...]
+                      className="group inline-flex items-center justify-between rounded-lg border border-primary/20 bg-primary/[0.06] px-3 py-2 text-xs text-foreground/80 hover:border-primary hover:bg-primary/[0.1] transition"
                     >
                       <span>{l.label}</span>
                       <ExternalLink className="h-3.5 w-3.5 text-primary/70 transition group-hover:translate-x-0.5" />
@@ -397,7 +397,7 @@ const Index = () => {
             {experience.map((e) => (
               <li
                 key={e.role}
-                className="grid grid-cols-1 md:grid-cols-12 gap-4 rounded-r-2xl border border-foreground/10 border-l-2 border-l-primary bg-foreground/[0.02] px-5 py-5 transition hover:bg-primary/[...]
+                className="grid grid-cols-1 md:grid-cols-12 gap-4 rounded-r-2xl border border-foreground/10 border-l-2 border-l-primary bg-foreground/[0.02] px-5 py-5 transition hover:bg-primary/[0.04]"
               >
                 <div className="md:col-span-3 font-mono text-[0.7rem] uppercase tracking-[0.18em] text-foreground/45">{e.date}</div>
                 <div className="md:col-span-9">
@@ -440,7 +440,7 @@ const Index = () => {
 
             <a
               href="mailto:akshaymuthyala77@gmail.com"
-              className="mt-8 inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/15 px-6 py-3.5 font-mono text-sm text-foreground hover:border-primary hover:bg-primar[...]
+              className="mt-8 inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/15 px-6 py-3.5 font-mono text-sm text-foreground hover:border-primary hover:bg-primary/20 transition"
             >
               <Mail className="h-4 w-4 text-primary" />
               akshaymuthyala77@gmail.com
@@ -453,7 +453,7 @@ const Index = () => {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full border border-foreground/10 bg-foreground/[0.04] px-4 py-2 text-xs text-foreground/65 hover:border-primary/50 hover:text-p[...]
+                  className="inline-flex items-center gap-2 rounded-full border border-foreground/10 bg-foreground/[0.04] px-4 py-2 text-xs text-foreground/65 hover:border-primary/50 hover:text-primary transition"
                 >
                   <Icon className="h-3.5 w-3.5" />
                   {label}
