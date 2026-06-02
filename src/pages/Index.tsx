@@ -197,21 +197,38 @@ const Index = () => {
               <span className="text-foreground">5K+ on Discord</span> — all organic, all measurable.
             </p>
 
-            <div className="mt-8 flex flex-wrap items-center gap-3 animate-[fadeUp_0.7s_0.3s_ease_both]">
-              <a
-                href="#work"
-                className="group inline-flex items-center gap-2 rounded-full px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.18em] text-white hover-lift"
-                style={{ background: "var(--gradient-primary)", boxShadow: "0 10px 40px hsl(271 91% 50% / 0.4)" }}
-              >
-                View My Work
-                <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-              </a>
-              <a
-                href="mailto:akshaymuthyala77@gmail.com"
-                className="inline-flex items-center gap-2 rounded-full border border-foreground/20 px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.18em] text-foreground/85 hover:border-primary hover:text-primary hover-lift"
-              >
-                <Mail className="h-4 w-4" />
-                Hire Me
+           <div className="mt-8 flex flex-wrap items-center gap-3 animate-[fadeUp_0.7s_0.3s_ease_both]">
+  <a
+    href="#work"
+    className="group inline-flex items-center gap-2 rounded-full px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.18em] text-white hover-lift"
+    style={{
+      background: "var(--gradient-primary)",
+      boxShadow: "0 10px 40px hsl(271 91% 50% / 0.4)",
+    }}
+  >
+    View My Work
+    <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+  </a>
+
+  <a
+    href="mailto:akshaymuthyala77@gmail.com"
+    className="inline-flex items-center gap-2 rounded-full border border-foreground/20 px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.18em] text-foreground/85 hover:border-primary hover:text-primary hover-lift"
+  >
+    <Mail className="h-4 w-4" />
+    Hire Me
+  </a>
+
+  <a
+    href="https://akshay-resume-ten.vercel.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-2 rounded-full border border-foreground/20 px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.18em] text-foreground/85 hover:border-primary hover:text-primary hover-lift"
+  >
+    Resume
+    <ArrowUpRight className="h-4 w-4" />
+  </a>
+</div>
+
             
             </div>
           </div>
