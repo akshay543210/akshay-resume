@@ -212,13 +212,7 @@ const Index = () => {
               >
                 <Mail className="h-4 w-4" />
                 Hire Me
-             <!--  </a>
-               <a
-                href="/akshay-muthyala-resume.pdf"
-                className="inline-flex items-center gap-2 px-3 py-3 text-xs font-medium uppercase tracking-[0.18em] text-foreground/55 hover:text-primary"
-              > 
-                <Download className="h-4 w-4" />
-              </a>  -->
+            
             </div>
           </div>
 
