@@ -1,6 +1,6 @@
 import { useReveal } from "@/hooks/useReveal";
 import CustomCursor from "@/components/CustomCursor";
-import { Download, Mail, ExternalLink, Twitter, Linkedin, Youtube, MessageCircle, Globe, ArrowUpRight, Sparkles } from "lucide-react";
+import { Mail, ExternalLink, Twitter, Linkedin, Youtube, MessageCircle, Globe, ArrowUpRight, Sparkles } from "lucide-react";
 
 /* TOOL STACK — strictly from resume */
 const stack: { group: string; items: string[] }[] = [
@@ -138,7 +138,7 @@ const socials = [
 ];
 
 const stats = [
-  { n: "12K+", l: "X Followers" },
+  { n: "11K+", l: "X Followers" },
   { n: "5K+", l: "Discord" },
   { n: "5", l: "Live Apps" },
   { n: "4+", l: "Years Shipping" },
@@ -163,7 +163,7 @@ const Index = () => {
             <a href="#experience" className="hover:text-primary transition">Experience</a>
             <a href="#contact" className="hover:text-primary transition">Contact</a>
           </div>
-          <span className="inline-flex items-center gap-2 rounded-full border border-[hsl(var(--confirmed)/0.5)] bg-[hsl(var(--confirmed)/0.08)] px-3 py-1 text-[0.6rem] font-semibold uppercase tracking-[0.18em] text-[hsl(var(--confirmed))]">
+          <span className="inline-flex items-center gap-2 rounded-full border border-[hsl(var(--confirmed)/0.5)] bg-[hsl(var(--confirmed)/0.08)] px-3 py-1 text-[0.6rem] font-semibold uppercase tracking-[0.15em]">
             <span className="relative flex h-1.5 w-1.5">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[hsl(var(--confirmed))] opacity-60" />
               <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-[hsl(var(--confirmed))]" />
@@ -197,39 +197,22 @@ const Index = () => {
               <span className="text-foreground">5K+ on Discord</span> — all organic, all measurable.
             </p>
 
-           <div className="mt-8 flex flex-wrap items-center gap-3 animate-[fadeUp_0.7s_0.3s_ease_both]">
-  <a
-    href="#work"
-    className="group inline-flex items-center gap-2 rounded-full px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.18em] text-white hover-lift"
-    style={{
-      background: "var(--gradient-primary)",
-      boxShadow: "0 10px 40px hsl(271 91% 50% / 0.4)",
-    }}
-  >
-    View My Work
-    <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-  </a>
-
-  <a
-    href="mailto:akshaymuthyala77@gmail.com"
-    className="inline-flex items-center gap-2 rounded-full border border-foreground/20 px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.18em] text-foreground/85 hover:border-primary hover:text-primary hover-lift"
-  >
-    <Mail className="h-4 w-4" />
-    Hire Me
-  </a>
-
-  <a
-    href="https://akshay-resume-ten.vercel.app/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="inline-flex items-center gap-2 rounded-full border border-foreground/20 px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.18em] text-foreground/85 hover:border-primary hover:text-primary hover-lift"
-  >
-    Resume
-    <ArrowUpRight className="h-4 w-4" />
-  </a>
-</div>
-
-            
+            <div className="mt-8 flex flex-wrap items-center gap-3 animate-[fadeUp_0.7s_0.3s_ease_both]">
+              <a
+                href="#work"
+                className="group inline-flex items-center gap-2 rounded-full px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.18em] text-white hover-lift"
+                style={{ background: "var(--gradient-primary)", boxShadow: "0 10px 40px hsl(271 91% 50% / 0.4)" }}
+              >
+                View My Work
+                <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              </a>
+              <a
+                href="mailto:akshaymuthyala77@gmail.com"
+                className="inline-flex items-center gap-2 rounded-full border border-foreground/20 px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.18em] text-foreground/85 hover:border-primary hover:text-foreground transition"
+              >
+                <Mail className="h-4 w-4" />
+                Hire Me
+              </a>
             </div>
           </div>
 
@@ -312,7 +295,7 @@ const Index = () => {
                 href={p.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative grid grid-cols-12 items-center gap-4 rounded-2xl border border-foreground/10 bg-foreground/[0.02] px-5 py-6 transition-all hover:border-primary/40 hover:bg-primary/[0.04] hover:-translate-y-0.5"
+                className="group relative grid grid-cols-12 items-center gap-4 rounded-2xl border border-foreground/10 bg-foreground/[0.02] px-5 py-6 transition-all hover:border-primary/40 hover:bg-primary/[0.04]"
               >
                 <div className="col-span-1 font-mono text-xs text-foreground/30">{String(idx + 1).padStart(2, "0")}</div>
                 <div className="col-span-12 sm:col-span-4">
@@ -353,7 +336,7 @@ const Index = () => {
                   {group.items.map((it) => (
                     <span
                       key={it}
-                      className="rounded-lg border border-primary/25 bg-primary/[0.06] px-3 py-1.5 text-xs text-foreground/85 transition hover:-translate-y-0.5 hover:border-primary hover:bg-primary/15 hover:shadow-[0_0_18px_hsl(var(--primary)/0.4)]"
+                      className="rounded-lg border border-primary/25 bg-primary/[0.06] px-3 py-1.5 text-xs text-foreground/85 transition hover:-translate-y-0.5 hover:border-primary hover:bg-primary/15"
                     >
                       {it}
                     </span>
@@ -389,7 +372,7 @@ const Index = () => {
                       href={l.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group inline-flex items-center justify-between rounded-lg border border-primary/20 bg-primary/[0.06] px-3 py-2 text-xs text-foreground/80 hover:border-primary hover:bg-primary/15"
+                      className="group inline-flex items-center justify-between rounded-lg border border-primary/20 bg-primary/[0.06] px-3 py-2 text-xs text-foreground/80 hover:border-primary hover:bg-primary/[0.1]"
                     >
                       <span>{l.label}</span>
                       <ExternalLink className="h-3.5 w-3.5 text-primary/70 transition group-hover:translate-x-0.5" />
@@ -457,7 +440,7 @@ const Index = () => {
 
             <a
               href="mailto:akshaymuthyala77@gmail.com"
-              className="mt-8 inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/15 px-6 py-3.5 font-mono text-sm text-foreground hover:border-primary hover:bg-primary/25 hover-lift"
+              className="mt-8 inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/15 px-6 py-3.5 font-mono text-sm text-foreground hover:border-primary hover:bg-primary/25 transition"
             >
               <Mail className="h-4 w-4 text-primary" />
               akshaymuthyala77@gmail.com
@@ -470,7 +453,7 @@ const Index = () => {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full border border-foreground/10 bg-foreground/[0.04] px-4 py-2 text-xs text-foreground/65 hover:border-primary/50 hover:text-primary hover-lift"
+                  className="inline-flex items-center gap-2 rounded-full border border-foreground/10 bg-foreground/[0.04] px-4 py-2 text-xs text-foreground/65 hover:border-primary/50 hover:text-primary transition"
                 >
                   <Icon className="h-3.5 w-3.5" />
                   {label}
