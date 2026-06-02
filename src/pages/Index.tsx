@@ -64,7 +64,7 @@ const proofs = [
   },
   {
     platform: "Twitter / X · @propfirm_forex",
-    metric: "11K+ Followers",
+    metric: "12K+ Followers",
     sub: "Built organically with AI-generated images, videos and captions. Outputs compared and refined against real human feedback — likes, shares, comments.",
     links: [{ label: "View profile", href: "https://x.com/propfirm_forex" }],
   },
